@@ -12,7 +12,7 @@ on:
       region:
         description: 'AWS Region to deploy to'
         required: true
-        default: 'ap-southeast-1'
+        default: 'us-east-1'
 
 jobs:
   # This workflow contains a single job called "deploy"
@@ -31,7 +31,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.ACCESS_KEY_SECRET }}
-          aws-region: ap-southeast-1
+          aws-region: us-east-1
 
       # Deploy to AWS CloudFormation
       - name: Deploy to AWS CloudFormation
