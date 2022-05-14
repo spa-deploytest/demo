@@ -14,7 +14,6 @@ on:
         required: true
         default: 'ap-southeast-1'
 
-
 jobs:
   # This workflow contains a single job called "deploy"
   deploy:
