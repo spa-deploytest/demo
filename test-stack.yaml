@@ -21,7 +21,6 @@ Resources:
       ImageId: !FindInMap
         - RegionEC2InstanceImageMap
         - !Ref 'AWS::Region'
-        - HVM64
       InstanceType: !Ref EC2InstanceType
       SecurityGroups:
         - !Ref HTTPSecurityGroup
