@@ -1,12 +1,16 @@
 ---
-
+Parameters:
+  ImageId: 
+    Description: Imageid placeholder 
+    Type: String
+    Default: ami-0742b4e673072066f
     
 Resources:
   TekLoonTestInstance:
     Type: AWS::EC2::Instance
     Properties:
       AvailabilityZone: us-east-1a
-      ImageId: ami-0742b4e673072066f
+      ImageId: !Ref ImageId
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref HTTPSecurityGroup
