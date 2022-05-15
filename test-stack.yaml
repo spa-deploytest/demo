@@ -3,6 +3,7 @@ Parameters:
   ImageId: 
     Description: Imageid placeholder 
     Type: String
+    Default: ami-0742b4e673072066f
     
 Resources:
   TekLoonTestInstance:
