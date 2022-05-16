@@ -29,7 +29,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::824016440127:role/thumbprint
+          role-to-assume: arn:aws:iam::824016440127:role/gitactions
           aws-region: us-east-1
 
       # Deploy to AWS CloudFormation
