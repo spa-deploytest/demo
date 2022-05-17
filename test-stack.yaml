@@ -1,5 +1,9 @@
 ---
 Parameters:
+  InstanceType:
+    Description: Test
+    Type: String
+    Default: t2.micro
   ImageId: 
     Description: Imageid placeholder 
     Type: String
