@@ -3,7 +3,7 @@ Parameters:
   InstanceType:
     Description: Test
     Type: String
-    Default: t2.small
+    Default: t4g.nano
   ImageId: 
     Description: Imageid placeholder 
     Type: String
@@ -15,7 +15,7 @@ Resources:
     Properties:
       AvailabilityZone: us-east-1a
       ImageId: !Ref ImageId
-      InstanceType: t2.micro
+      InstanceType: InstanceType
       SecurityGroups:
         - !Ref HTTPSecurityGroup
 
